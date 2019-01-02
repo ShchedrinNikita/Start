@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+div.header-contacts  {
+    height: 52px; 
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+div.header-contacts .mail-header span, div.header-contacts .callback-header span, div.header-contacts .mailing-header span {
+    cursor: pointer;
+    transition: 0.3s;
+}
+div.header-contacts .mail-header span:hover, div.header-contacts .callback-header span:hover, div.header-contacts .mailing-header span:hover {
+    border-color: transparent;
+}
+.content-area {
+    margin: 0 auto;
+}
+.content-area.wide {
+    width: 906px; 
+}
+div.header-contacts .content-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+div.header-contacts .content-area .callback-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+div.header-contacts .content-area .callback-header .order-call {
+    margin: 0 20px;
+}
+.underline-span {
+    border-bottom: 1px solid #aaa;
+}
+div.header-contacts .mail-header {
+
+}
+div.header-contacts i {
+    color: tomato;
+    margin-right: 10px;
+}
+div.header-contacts .callback-header i {
+    color: black;
+}
