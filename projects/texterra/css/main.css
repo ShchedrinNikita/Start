@@ -19,12 +19,12 @@ div.header-contacts .mail-header span:hover, div.header-contacts .callback-heade
     margin: 0 auto;
 }
 .content-area.wide {
-    width: 906px; 
+    width: 950px; 
 }
 div.header-contacts .content-area {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     
 }
 div.header-contacts .content-area .callback-header {
@@ -38,13 +38,195 @@ div.header-contacts .content-area .callback-header .order-call {
 .underline-span {
     border-bottom: 1px solid #aaa;
 }
-div.header-contacts .mail-header {
-
-}
 div.header-contacts i {
     color: tomato;
     margin-right: 10px;
 }
 div.header-contacts .callback-header i {
     color: black;
+}
+
+/* Header info */
+.header-info .header-logo, .header-info .header-menu span {
+    cursor: pointer;
+}
+.header-info {
+    height: 76px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header-info svg {
+    fill: white;
+}
+.header-info .content-area {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-info .content-area .header-menu {
+    display: flex;
+    height: 76px;
+}
+.header-info .content-area .header-menu span {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 4px solid transparent;
+}
+.header-info .content-area .header-menu span:hover{
+    border-bottom: 4px solid #c22740;
+}
+.header-info .header-search input {
+    background-color: black;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+/* Title-section */
+ 
+.title-section {
+    height: 425px;
+    background: url(../img/section_bg.jpeg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+.title-section .content-area {
+    padding: 55px;
+}
+.title-section .content-area.wide .breadcrumbs .underline-span {
+    border-bottom: 1px solid #aaa;
+}
+.title-section .content-area.wide .breadcrumbs .underline-span {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.title-section .content-area.wide .breadcrumbs .underline-span:hover {
+    border-color: transparent;
+}
+.title-section .content-area.wide .main-title h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.title-section .main-title {
+    padding: 80px;
+}
+
+/* Main-section First-line */
+
+.main-section .content-area .first-line {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.main-section .date {
+    color: #999;
+}
+.main-section .left-part .author  {
+margin: 35px;
+color: tomato;
+font-weight: bold;
+border-bottom: 1px solid rgba(255, 99, 71, 0.178);
+cursor: pointer;
+transition: 0.3s;
+}
+.main-section .left-part .author:hover {
+    border-color: transparent;
+}
+.main-section  .first-line .right-part {
+    background: rgb(241, 241, 241); 
+    color: #888; 
+    padding: 10px; 
+    border-radius: 15px; 
+    cursor: pointer;
+} 
+div.main-section .right-part .share {
+    font-weight: bold;
+    padding: 13px;
+}
+div.main-section .first-line .right-part i { 
+    color: rgb(209, 209, 209);
+}
+
+.main-section .content-area .first-line {
+    border-bottom: 1px solid  rgba(170, 170, 170, 0.26);
+}
+/* Second-line */
+.main-section .content-area .second-line {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: #888;
+}
+.main-section .content-area .second-line i {
+    color: #888;
+}
+.main-section .content-area .left-part .read-time {
+     padding-left: 10px;
+}
+.main-section .content-area .left-part .ttr {
+    font-weight: bold;
+}
+.main-section .content-area .second-line .right-part span {
+    padding-left: 5px;
+}
+.main-section .content-area .second-line .left-part .red-box {
+    background: rgb(250, 54, 20); 
+    color: white;  
+    padding: 5px 20px; 
+    border-radius: 30px; 
+    cursor: pointer;
+    margin: 15px;
+    font-weight: bold;
+}
+.main-section .content-area .second-line {
+    border-bottom: 1px solid rgba(170, 170, 170, 0.26);
+}
+/* Text-section */
+.text-section {
+    padding: 40px 0;
+}
+.text-section .first-paragraph p, .text-section .second-paragraph p {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+.text-section a {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+    cursor: pointer;
+}
+.text-section a:hover {
+    border-bottom: transparent;
+}
+/* Quote */
+.text-section .quote1 {
+    text-align: left;
+    width: 642px;
+}
+.text-section .quote i {
+    padding-right: 15px;
+    padding-bottom: 45px;
+    color: tomato;
+}
+.text-section .quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(170, 170, 170, 0.26);
+}
+.text-section .quote p {
+    font-size: 18px;
+    width: 631px;
+    display: flex;
+    align-items: left;
+    padding-bottom: 38px;
+    padding-top: 38px;
+    margin: 0px;
 }
