@@ -6,6 +6,7 @@ div.header-contacts  {
     height: 52px; 
     display: flex;
     align-items: center;
+
     text-transform: uppercase;
 }
 div.header-contacts .mail-header span, div.header-contacts .callback-header span, div.header-contacts .mailing-header span {
@@ -85,6 +86,9 @@ div.header-contacts .callback-header i {
     color: #999;
     padding-bottom: 5px;
 }
+.header-info .header-search i:hover {
+    cursor: pointer;
+}
 
 /* Title-section */
  
@@ -163,9 +167,7 @@ div.main-section .first-line .right-part i {
     align-items: center; 
     color: #888;
 }
-.main-section .content-area .second-line i {
-    color: #888;
-}
+
 .main-section .content-area .left-part .read-time {
      padding-left: 10px;
 }
@@ -184,8 +186,16 @@ div.main-section .first-line .right-part i {
     margin: 15px;
     font-weight: bold;
 }
+.main-section .content-area .second-line .left-part .red-box:hover {
+    background-color: rgb(250, 96, 69);
+}
 .main-section .content-area .second-line {
     border-bottom: 1px solid rgba(170, 170, 170, 0.26);
+}
+.main-section .content-area .second-line .right-part:hover{
+    color:tomato;
+    cursor: pointer;
+    transition: 0.3s;
 }
 /* Text-section */
 .text-section {
@@ -229,4 +239,27 @@ div.main-section .first-line .right-part i {
     padding-bottom: 38px;
     padding-top: 38px;
     margin: 0px;
+}
+/* First-pont */
+.text-section .first-point h2 {
+    font-size: 30px;
+}
+.text-section .first-point p {
+margin: 0px;
+font-size: 20px;
+line-height: 1.7;
+padding-bottom: 30px;
+}
+.text-section .first-point img {
+    width: 100%;
+    object-fit: contain;
+}
+.text-section .first-point .images p {
+    font-size: 16px;
+    font-style: oblique;
+    color: #aaa;
+}
+
+@media screen and (max-width:1000px){
+    
 }
