@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body,html {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+a {
+    color: inherit;
+}
+.container {
+    width: 1140px;
+    padding: 0.8rem 0.8rem 0px 0.8rem;
+    margin: 0 auto;
+}
+.main-section {
+    background: url(../img/main\ bg3.jpg) no-repeat top;
+    background-size: cover;
+    color: #fff;   
+    height: 100vh;
+}
+.main-section .header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.main-section .header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.main-section .header .logo i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+.main-section .header .logo .bold {
+    font-weight: bold;
+}
+.menu-list li {
+    display: inline-block;
+    padding: 16px;
+}
+.main-section .reg-part {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    text-decoration: none;    
+    padding: 10px 35px;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+.btn.green {
+    background: linear-gradient(30deg, #1aa190, #3bcf7a);
+}
+.btn.purple {
+    background: #000;
+}
+.main-section .header .purple-text {
+    color: #2D0263;
+    padding-right: 18px;
+}
+.title-box {
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.midle-text {
+    font-size: 1.4rem;
+}
+.large-text {
+    font-size: 2rem;
+}
