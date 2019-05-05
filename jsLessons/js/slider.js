@@ -10,7 +10,7 @@ function initSlider(wrapper) {
 }
  function initDots(wrapper, currentImg) {
     $('.slider .nav-dots .dot').click(function () {
-        $(".slider .nav-dots .active").removeClass("active");
+        $('.slider .nav-dots .active').removeClass("active");
         $(this).addClass("active"); 
         currentImg.i = $(this).index();
         slideDot(wrapper, currentImg)
@@ -22,15 +22,20 @@ function initArrows(wrapper, currentImg) {
     var prevBtn = $('<div class="btn prev-btn"><i class="fas fa-chevron-left"></i></div>').click(function (e) {
         if($(this).hasClass('left-bndr')) return
         slide(wrapper, currentImg,'prev')
+        updateDot(wrapper, currentImg)
     })
     var nextBtn = $('<div class="btn next-btn"><i class="fas fa-chevron-right"></i></div>').click(function (e) {
         if($(this).hasClass('right-bndr')) return 
         slide(wrapper, currentImg, 'next')
+        updateDot(wrapper, currentImg)
     })
     wrapper.append(prevBtn).append(nextBtn)
     updateArrows(wrapper, currentImg) 
 }
-
+function updateDot(wrapper, currentImg) {
+    $('.slider .nav-dots .active').removeClass('active');
+    $('.slider .nav-dots .dot').eq(currentImg.i).addClass('active')
+}
 function updateArrows(wrapper, currentImg) {
     if (currentImg.i === 0) {
         wrapper.find('.prev-btn').addClass('left-bndr')
