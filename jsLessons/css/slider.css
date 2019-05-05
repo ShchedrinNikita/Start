@@ -3,6 +3,10 @@
     height: 600px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .slider-wrapper {
     width: 800px;
@@ -53,3 +57,19 @@
     opacity: 0.5;
     cursor: default;
 }
+.slider .nav-dots {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    bottom: -50px;
+}
+.slider .nav-dots .dot {
+    color: rgba(100, 100, 100, 0.897);
+    cursor: pointer;
+}
+.slider .nav-dots .dot.active {
+    color: black;
+}
+
