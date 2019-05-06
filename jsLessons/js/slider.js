@@ -101,18 +101,7 @@ function slideDot(wrapper, currentImg, type) {
         updateArrows(wrapper, currentImg) 
     } 
 }
-initSlider($('.slider'), 'usual')
-/*
-function slideDot(wrapper, currentImg) {
-    currentImg.i = 
-    var width = wrapper.find('.slider-wrapper').width()
-    var delta = wrapper.find('.slider-line').css('right')
-    wrapper.find('.slider-line').animate({
-    right: currentImg.i * width
-    }, 400)
-    updateArrows(wrapper, currentImg)
-} */
-
+initSlider($('.slider'), 'usual') // or 'infity'
 /* 
 function nextImg(wrapper, currentImg) {
     currentImg.i++;
